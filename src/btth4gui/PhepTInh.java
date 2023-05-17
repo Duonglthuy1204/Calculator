@@ -26,37 +26,115 @@ public class PhepTInh extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        lbMucLuong = new javax.swing.JLabel();
+        tfMucLuong = new javax.swing.JTextField();
+        lbHeSo = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        comboHSL = new javax.swing.JComboBox<>();
+        jPanel2 = new javax.swing.JPanel();
+        btLuongThang = new javax.swing.JButton();
+        lbLuong = new javax.swing.JLabel();
+        tfLuong = new javax.swing.JTextField();
+
+        jLabel3.setText("jLabel3");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new java.awt.GridLayout(4, 2, 5, 10));
 
-        jLabel1.setText("jLabel1");
+        lbMucLuong.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbMucLuong.setText("Mức lương");
+        getContentPane().add(lbMucLuong);
 
-        jLabel2.setText("jLabel2");
+        tfMucLuong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfMucLuongActionPerformed(evt);
+            }
+        });
+        getContentPane().add(tfMucLuong);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 121, Short.MAX_VALUE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 279, Short.MAX_VALUE))
+        lbHeSo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbHeSo.setText("Hệ số lương");
+        getContentPane().add(lbHeSo);
+
+        comboHSL.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1", "1.5", "2", "2.5" }));
+        comboHSL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                comboHSLActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(comboHSL, javax.swing.GroupLayout.Alignment.TRAILING, 0, 201, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(36, 36, 36)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(27, 27, 27)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(139, Short.MAX_VALUE))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(comboHSL, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 30, Short.MAX_VALUE)
         );
+
+        getContentPane().add(jPanel1);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 201, Short.MAX_VALUE)
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 30, Short.MAX_VALUE)
+        );
+
+        getContentPane().add(jPanel2);
+
+        btLuongThang.setText("Lương tháng");
+        btLuongThang.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btLuongThangActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btLuongThang);
+
+        lbLuong.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lbLuong.setText("Lương");
+        getContentPane().add(lbLuong);
+
+        tfLuong.setEditable(false);
+        tfLuong.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                tfLuongActionPerformed(evt);
+            }
+        });
+        getContentPane().add(tfLuong);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void tfLuongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfLuongActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfLuongActionPerformed
+
+    private void tfMucLuongActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfMucLuongActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_tfMucLuongActionPerformed
+
+    private void comboHSLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_comboHSLActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_comboHSLActionPerformed
+
+    private void btLuongThangActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btLuongThangActionPerformed
+        String StrMucLuong = tfMucLuong.getText();
+        int MucLuong = Integer.parseInt(StrMucLuong);
+        
+        String ItemHSL = comboHSL.getSelectedItem().toString();
+        double HSL = Double.parseDouble(ItemHSL);
+        
+        double Luong = MucLuong*HSL;
+        tfLuong.setText(""+Luong);
+    }//GEN-LAST:event_btLuongThangActionPerformed
 
     /**
      * @param args the command line arguments
@@ -94,7 +172,15 @@ public class PhepTInh extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
+    private javax.swing.JButton btLuongThang;
+    private javax.swing.JComboBox<String> comboHSL;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel lbHeSo;
+    private javax.swing.JLabel lbLuong;
+    private javax.swing.JLabel lbMucLuong;
+    private javax.swing.JTextField tfLuong;
+    private javax.swing.JTextField tfMucLuong;
     // End of variables declaration//GEN-END:variables
 }
